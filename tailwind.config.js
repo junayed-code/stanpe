@@ -6,7 +6,19 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+      padding: "1.5rem",
+      screens: {
+        lg: "1020px",
+        xl: "1180px",
+      },
+    },
+    extend: {
+      fontFamily: {
+        primary: ["'Afacad'", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
