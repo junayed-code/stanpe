@@ -22,3 +22,11 @@ export const signInSchema = Yup.object().shape({
   email: Yup.string().email().required("This field is required."),
   password: Yup.string().min(6).required("This field is required."),
 });
+
+export const taskSchema = Yup.object().shape({
+  title: Yup.string().min(4).max(70).required("This field is required."),
+  description: Yup.string()
+    .min(10)
+    .max(120)
+    .required("This field is required."),
+});

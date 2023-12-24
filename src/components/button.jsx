@@ -16,7 +16,7 @@ const shadowColor = {
 
 /**
  *
- * @param {{ btn: 'primary' | 'secondary' | 'default' } & import("react").ButtonHTMLAttributes & import("framer-motion").AnimationProps} param0
+ * @param {{ btn: 'primary' | 'secondary' | 'default' } & import("react").ButtonHTMLAttributes & import("framer-motion").AnimationProps & import("framer-motion").LayoutProps} param0
  */
 const Button = ({
   children,

@@ -20,12 +20,12 @@ const layout = ({ children }) => {
 
   return (
     <>
-      {loading && (
+      {/* {loading && (
         <div className="fixed grid place-items-center inset-0 bg-black/10 text-3xl font-medium text-center text-slate-700">
           {" "}
           Loading...{" "}
         </div>
-      )}
+      )} */}
       {children}
     </>
   );

@@ -11,6 +11,7 @@ import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
 } from "firebase/auth";
+import { queryCache } from "./ProviderWrapper";
 
 const googleProvider = new GoogleAuthProvider();
 
@@ -70,6 +71,7 @@ const AuthProvider = ({ children }) => {
     try {
       setLoading(true);
       await signOut(auth);
+      queryCache.clear();
     } catch (err) {
       setLoading(false);
     }
