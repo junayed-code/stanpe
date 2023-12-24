@@ -19,7 +19,7 @@ const page = () => {
     queryKey: ["tasks"],
     queryFn: async () => {
       const headers = { email: currentUser?.email };
-      const res = await fetch("http://localhost:3000/api/tasks", { headers });
+      const res = await fetch("/api/tasks", { headers });
       const tasks = (await res.json())?.tasks || [];
       const important = tasks.filter(task => task.important);
       const completed = tasks.filter(task => task.status === "completed");
